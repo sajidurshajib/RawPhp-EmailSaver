@@ -32,19 +32,42 @@
     <h4 class="text-center text-success"><?php echo temp_session_show('email_saved')?></h4>
 </div>
 
-<pre>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Fullname</th>
+                    <th>Email</th>
+                    <th>Options</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        if(per_session_check('email_search')==1){
+                            $r=per_session_show('email_search');
+                            foreach($r as $a){
+                                echo '<tr>';
+                                echo '<td>'.$a['fullname'].'</td>';
+                                echo '<td>'.$a['email'].'</td>';
+                                echo '<td>'.'<a href="#" class="btn btn-primary btn-sm">update</a>'.'</td>';
+                                echo '<td>'.'<a href="#" class="btn btn-danger btn-sm">delete</a>'.'</td>';
+                                echo '</tr>';
+                            }
+                        }
+                        
+                        if(per_session_check('email_search')==1){
+                            per_session_unset('email_search');
+                        }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
-<?php
 
-    if(per_session_check('email_search')==1){
-        echo print_r(per_session_show('email_search'));
-    }
-    
-    if(per_session_check('email_search')==1){
-        per_session_unset('email_search');
-    }
-?>
-
-</pre>
 
 <?php include 'footer.php';?>
