@@ -52,7 +52,7 @@
                                 echo '<tr>';
                                 echo '<td>'.$a['fullname'].'</td>';
                                 echo '<td>'.$a['email'].'</td>';
-                                echo '<td>'.'<a href="#" class="btn btn-primary btn-sm">update</a>'.'</td>';
+                                echo '<td>'.'<a href="'.$config['base_url'].'controller/updateEmailGetId.php?id='.$a['id'].'" class="btn btn-primary btn-sm">update</a>'.'</td>';
                                 echo '<td>'.'<a href="'.$config['base_url'].'controller/deleteEmail.php?id='.$a['id'].'" class="btn btn-danger btn-sm">delete</a>'.'</td>';
                                 echo '</tr>';
                             }
