@@ -1,6 +1,6 @@
 <?php 
     $config=[
-        'base_url'=>'http://192.168.1.3:88/raw-php-crud-mvc/',
+        'base_url'=>'http://192.168.1.3:88/RawPhp-EmailSaver/',
     ];
     
     $db=[
