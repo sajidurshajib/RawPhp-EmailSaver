@@ -28,11 +28,12 @@
       <section class="text-center align-middle">
         <div class="container">
           <h1 class="jumbotron-heading">CRUD (Raw Php)</h1>
+          <h3> Email address saver</h3>
           <h2> Developed by Sajidur Rahman Shajib</h2>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+          <p class="lead text-muted"></p>
           <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            <a href="https://www.github.com/sajidurshajib" class="btn btn-primary my-2">GitHub</a>
+            <a href="https://www.github.com/sajidurshajib/RawPhp-EmailSaver" class="btn btn-secondary my-2">ThisRepo</a>
           </p>
         </div>
       </section>

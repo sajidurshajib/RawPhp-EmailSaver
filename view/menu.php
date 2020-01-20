@@ -12,6 +12,9 @@
                 <a class="nav-link" href="<?php echo $config['base_url']."view/dashboard.php";?>">Dashboard <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="<?php echo $config['base_url']."view/profile.php";?>">Profile</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="<?php echo $config['base_url']."view/search.php";?>">Search</a>
             </li>
             <li class="nav-item">
